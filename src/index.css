@@ -1,13 +1,212 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color:white;
+}
+.page-title{
+    color: white;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logo{
+    width: 30%;
+}
+.navtoggle{
+    font-size:36px;
+    cursor:pointer;
+    position: absolute;
+    top: 11px;
+    color:#fff !important;
+    margin-left: 702px;
+}
+.navtoggle1{
+    font-size:30px;
+    cursor:pointer;
+    color:#fff !important;
+}
+.main{
+    min-height: 502px;
+
+}
+
+.header{
+    position: relative;
+}
+.fixed{
+    /* position: fixed !important; */
+    width: 100%;
+}
+/* .overlay1{
+position: absolute !important;
+height:700px  !important;
+}*/
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.36);
+    overflow-x: hidden;
+    transition: 0s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    padding-left: 330px;
+    /* text-align: center; */
+    margin-top: 30px;
+  }
+  .overlay-content a{
+    text-decoration: none  !important;
+    font-size: 40px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-family: arial black,arial-w01-black,arial-w02-black,arial-w10 black,sans-serif;
+  }
+
+
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 70px;
+    color:#fff;
+
+    cursor:pointer;
+  }
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+.slideshow-container {
+    width: 764px !important;
+    top:-56px;
+    /* left: 500px; */
+    position: relative;
+    margin-right: 90px;
+
+}
+.carousel-control-prev,.carousel-indicators,.carousel-control-next{
+    display: none !important;
+}
+
+.carousel-item {
+    height: 489px !important;
+    -webkit-transition: 0.1s ease-in-out left;
+    -moz-transition: 0.1s ease-in-out left;
+    -o-transition: 0.1s ease-in-out left;
+    transition: 0.1s ease-in-out left;
+  }
+.carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 489px !important;
+}
+.carousel-caption{
+    text-align: left !important;
+}
+
+.footer-text{
+    font-size: 10px;
+}
+
+
+
+
+/* Talent */
+.list {
+    list-style: none;
+    position: fixed;
+}
+.list li a{
+    color: #fff;
+    font-weight: 700;
+    line-height: 30px;
+    text-decoration: none;
+}
+.talent-name{
+    color:white !important;
+    font-size:12px;
+    font-family: wfont_d0c97d_22d5f30efccf46d38d0155a1aca5d644,wf_22d5f30efccf46d38d0155a1a,orig_tungsten_book;
+}
+.social-count{
+    color:white;
+    font-size: 16px;
+}
+.post{
+    margin-top: 16rem  !important;
+}
+.last-post{
+    margin-bottom: 100px;
+}
+.post-img{
+    width:100%;
+    height: 400px;
+    position: relative;
+}
+.back-home{
+    background-image: url('./images/banner1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+.back-inner{
+    background-image: url('./images/banner1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.post-content{
+    width: 100%;
+    min-height:200px ;
+    position: absolute;
+    left: 150px;
+    top: 270px;
+    padding:20px;
+    background-color: white;
+}
+
+.post-p{
+    font-family: arial,ｍｓ ｐゴシック,ms pgothic,돋움,dotum,helvetica,sans-serif;
+    font-size:14px ;
+}
+
+
+/* Login Page */
+
+.bg-logo{
+    background-color: #fdca32 !important;
+    color:black !important;
+}
+.bg-black{
+    background-color: transparent !important;
 }
